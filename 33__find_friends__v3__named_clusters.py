@@ -98,3 +98,22 @@ fig.update_layout(
     yaxis_title="Liczba osób",
 )
 st.plotly_chart(fig)
+
+with st.expander("📊 Pokaż szczegóły osób z tej grupy"):
+    st.markdown("#### 🎂 Rozkład wieku")
+    st.dataframe(same_cluster_df['age'].value_counts().to_frame('Liczba osób'))
+
+    st.markdown("#### 🎓 Rozkład wykształcenia")
+    st.dataframe(same_cluster_df['edu_level'].value_counts().to_frame('Liczba osób'))
+
+    st.markdown("#### 🚻 Rozkład płci")
+    st.dataframe(same_cluster_df['gender'].value_counts().to_frame('Liczba osób'))
+
+    st.markdown("#### 🐾 Rozkład ulubionych zwierząt")
+    st.dataframe(same_cluster_df['fav_animals'].value_counts().to_frame('Liczba osób'))
+
+    st.markdown("#### 🏞️ Rozkład ulubionych miejsc")
+    st.dataframe(same_cluster_df['fav_place'].value_counts().to_frame('Liczba osób'))
+
+    st.markdown("#### Podsumowanie numeryczne (describe)")
+    st.dataframe(same_cluster_df.describe(include='all'))
