@@ -1,5 +1,8 @@
 # Znajdź Znajomych — Aplikacja Streamlit
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://wdrozenieznajdzprzyjaciol.streamlit.app/)
+
+
 Aplikacja pozwala znaleźć osoby o podobnych zainteresowaniach na podstawie odpowiedzi z ankiety.
 
 🧩 Wykorzystuje:
